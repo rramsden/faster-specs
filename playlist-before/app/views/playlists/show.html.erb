@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @playlist.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @playlist.description %>
+</p>
+
+<% if current_user.admin? %>
+  <%= link_to 'Edit', edit_playlist_path(@playlist) %>
+<% end %>
+
+<%= link_to 'Back', playlists_path %>
