@@ -19,9 +19,14 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
+
   config.include FeatureMacros
-  config.use_transactional_fixtures = true
+  config.extend ControllerMacros, type: :controller
+
+  config.include Devise::TestHelpers, type: :controller
+  config.include Devise::TestHelpers, type: :view
   config.include FactoryGirl::Syntax::Methods
+
   config.use_transactional_fixtures = false
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)

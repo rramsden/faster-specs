@@ -4,8 +4,7 @@ RSpec.describe "playlists/new", type: :view do
   before(:each) do
     assign(:playlist, Playlist.new(
       :name => "MyString",
-      :description => "MyString",
-      :references => ""
+      :description => "MyString"
     ))
   end
 
@@ -13,12 +12,8 @@ RSpec.describe "playlists/new", type: :view do
     render
 
     assert_select "form[action=?][method=?]", playlists_path, "post" do
-
       assert_select "input#playlist_name[name=?]", "playlist[name]"
-
       assert_select "input#playlist_description[name=?]", "playlist[description]"
-
-      assert_select "input#playlist_references[name=?]", "playlist[references]"
     end
   end
 end
