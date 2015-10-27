@@ -7,6 +7,8 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
+
+  # config.filter_run_excluding :slow => true unless ENV['SLOW_SPECS']
 end
 
 Knapsack::Adapters::RspecAdapter.bind if ENV['CI']

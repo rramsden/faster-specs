@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "playlists", js: true, type: :feature do
+feature "playlists", js: true, slow: true, type: :feature do
   context 'index action' do
     before do
       sign_in(user)
