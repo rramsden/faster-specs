@@ -27,6 +27,12 @@ RSpec.configure do |config|
   config.include Devise::TestHelpers, type: :view
   config.include FactoryGirl::Syntax::Methods
 
+
+  # Stub out the logged in user for faster tests
+  # config.include Warden::Test::Helpers
+  # config.before(:suite) { Warden.test_mode! }
+  # config.after(:each) { Warden.test_reset! }
+
   config.use_transactional_fixtures = false
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)

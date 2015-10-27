@@ -6,4 +6,9 @@ module FeatureMacros
 
     click_button 'Log in'
   end
+
+  # def sign_in_as(user, path = admin_root_path)
+  #   login_as user, :scope => :user
+  #   visit path
+  # end
 end
