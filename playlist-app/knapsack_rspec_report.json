@@ -1,0 +1,9 @@
+{
+  "spec/controllers/playlists_controller_spec.rb": 0.1677107810974121,
+  "spec/features/playlists_spec.rb": 3.883249282836914,
+  "spec/routing/playlists_routing_spec.rb": 0.00458979606628418,
+  "spec/views/playlists/edit.html.erb_spec.rb": 0.014494895935058594,
+  "spec/views/playlists/index.html.erb_spec.rb": 0.026877880096435547,
+  "spec/views/playlists/new.html.erb_spec.rb": 0.014806985855102539,
+  "spec/views/playlists/show.html.erb_spec.rb": 0.017590045928955078
+}
