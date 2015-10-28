@@ -1,7 +1,7 @@
 # Faster specs
 
 Speeding up a slow test suite
-[Presentation Slides](https://docs.google.com/a/degica.com/presentation/d/1BFJh07dL4QfmWGQdKmGBPDroWXaJeImsLTFi8KE31BM/pub?start=false&loop=false&delayms=3000)
+[Presentation Slides](https://github.com/rramsden/faster-specs/raw/master/slides.pdf)
 
 ## References
 
